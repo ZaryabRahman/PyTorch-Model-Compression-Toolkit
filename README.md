@@ -82,10 +82,7 @@ Our toolkit was thoroughly tested with ResNet18 on CIFAR-10. The following resul
 |-----------|----------|---------------------|-------------------|--------------------------|-----------------------------|---------------|---------------|
 | ResNet18  | CIFAR-10 | Structured Pruning  |        4×         |      94.8%               |         94.4%               |     2.7×      |     2.1×      |
 
-- **All experiments performed on a Ryzen 5700G, RTX 3060, PyTorch 2.0.0, CUDA 11.8.**
-- **Pruning configurations available in `/configs/pruning_resnet18_cifar10.yaml`.**
-- **Full logs and training curves are provided in `/examples/logs/`.**
-- **Run exactly as described for fully reproducible results.**
+- **Performed on T4 GPU**
 
 **Highlights:**
 - ResNet18 compressed to 25% of its original size with only a 0.4% top-1 accuracy drop.
