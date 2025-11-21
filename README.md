@@ -108,7 +108,6 @@ Feel free to contribute!
 - Add a new feature, fix a bug, or improve docs.
 - Pull requests are welcome against the `main` branch.
 
-> **See:** [CONTRIBUTING.md](CONTRIBUTING.md) (coming soon!)
 
 ---
 
