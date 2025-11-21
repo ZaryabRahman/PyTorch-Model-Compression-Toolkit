@@ -19,6 +19,8 @@ A flexible, research-oriented toolkit for effective deep neural network **compre
   Remove weights/channels globally or layer-wise.
 - **Quantization Ready**  
   Code structure supports easy integration of quantization workflows.
+- **Distillation Ready**  
+  Code structure supports easy integration of distillation.
 - **Experiment Configuration**  
   All runs and hyperparameters defined via easy-to-modify YAML files.
 - **Plug & Play Examples**  
