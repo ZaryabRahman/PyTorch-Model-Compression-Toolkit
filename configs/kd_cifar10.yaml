@@ -1,0 +1,24 @@
+model:
+  teacher:
+    name: resnet18
+    pretrained: true
+    num_classes: 10
+  student:
+    name: resnet18
+    pretrained: false
+    num_classes: 10
+
+distillation:
+  temperature: 4.0
+  alpha: 0.7
+
+training:
+  epochs: 20
+  batch_size: 128
+  lr: 0.1
+  momentum: 0.9
+  weight_decay: 5e-4
+
+paths:
+  data_dir: ./data
+  save_dir: ./runs/kd_resnet18
