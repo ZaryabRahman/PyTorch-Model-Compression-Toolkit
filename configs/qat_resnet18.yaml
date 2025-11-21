@@ -1,0 +1,26 @@
+model:
+name: resnet18
+num_classes: 10
+pretrained: false
+
+
+quantization:
+num_bits: 8
+symmetric: false
+per_channel: false
+observer: MinMaxObserver
+
+
+training:
+epochs: 20
+batch_size: 128
+lr: 0.1
+momentum: 0.9
+weight_decay: 5e-4
+grad_accum_steps: 1
+clip_grad_norm: null
+
+
+paths:
+data_dir: ./data
+save_dir: ./runs/qat_resnet18

@@ -1,0 +1,21 @@
+model:
+  name: resnet18
+  num_classes: 10
+  pretrained: false
+
+pruning:
+  type: unstructured       # unstructured / structured / lottery_ticket
+  amount: 0.2              # fraction of weights/channels to prune per step
+  dim: 0                   # for structured pruning, dimension to prune along
+  param_name: weight
+
+training:
+  epochs: 20
+  batch_size: 128
+  lr: 0.1
+  momentum: 0.9
+  weight_decay: 5e-4
+
+paths:
+  data_dir: ./data
+  save_dir: ./runs/pruning_resnet18
